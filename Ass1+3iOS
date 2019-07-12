@@ -1,0 +1,106 @@
+import Foundation
+//1
+let const: Int = 11
+//2
+var age: Int = 16
+print(age)
+age = 30
+print(age)
+//3
+let a: Int = 46
+let b: Int = 10
+let answer1: Int = (a * 100) + b 
+let answer2: Int = (a * 100) + (b * 100)
+let answer3: Int = (a * 100) + (b / 10)
+print("\(answer1) \(answer2) \(answer3) ")
+//4 // 5 * 3 - 4 / 2 * 3
+print(( (5 * 3) - (4 / 2) * 2))
+//5 
+let aa: Double = 1
+let bb: Double = 2
+let average: Double = (aa + bb)/2
+print(average)
+//6 
+let abc: Float  = 30
+let fahrenheit: Double = (Double(abc) * 1.8) + 32
+print(fahrenheit)
+//7
+let position = 2
+//row = 0 // column = 1
+import Foundation
+//8
+let dividend: Double = 69
+let divisor: Double = 20
+let quotient: Int  = Int(dividend / divisor)
+//let remainder: Int = Int(dividend % divisor)
+//Should work but doesnt seem to with http://online.swiftplayground.run/
+let remainder2: Int =   Int(dividend) - Int((quotient * Int(divisor)))
+print(remainder2)
+//9
+let degrees: Double = 35
+let radians = degrees * 2 * 3.142 / 360
+print(radians)
+//10
+let x1: Double = 1
+let x2: Double = 2
+let y1: Double = 3
+let y2: Double = 4
+let distance = sqrt(((y2 - y1)*(y2 - y1)) + ((x2 - x1)*(x2 - x1)))
+print(distance)
+//11
+//..
+//Challenges
+//1
+let coordinates = (2, 3)
+print(coordinates)
+//2
+let namedCoordinate = (row: 2, column: 5)
+print(namedCoordinate)
+//3
+//1 not valid
+//4 
+//False code
+//5 
+//Constant cant be changed
+//6
+//Int
+//7 
+//Int
+//8
+//String
+//9
+//92
+//CHALLENGES
+//1
+//The code looks okay but there's an else statement missing which can cause the last line of code render useless.
+//2 
+//True
+//False
+//True
+//True
+
+//ASS.3
+//1
+//Valid
+//Invalid
+//Valid
+//valid
+//2
+func divideIfWhole(dividend: Int, divisor: Int)
+{
+    var  a = dividend //make a copy of dividend
+
+    a /= divisor
+    if ( dividend % divisor ) == 0{
+         print("\(divisor) divides \(dividend), \(a) times")
+
+
+    }
+    else
+    {
+        print("\(divisor) can not divide \(dividend), \(a) fully in integers ")
+    }
+
+}
+
+divideIfWhole(dividend: 10, divisor: 3)
